@@ -1,10 +1,12 @@
-<?php 
+<?php
+class User {
 
-$myObj->name = "John";
-$myObj->age = 30;
-$myObj->city = "New York";
-
-$myJSON = json_encode($myObj);
+ public  $name;
+ public $age;
+}
+$user = new User();
+$user->name  = "John";
+$user->age = "34";
+$myJSON = json_encode($user);
 
 echo $myJSON;
-?>
